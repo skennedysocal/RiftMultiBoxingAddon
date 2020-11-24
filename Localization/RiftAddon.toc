@@ -1,0 +1,17 @@
+﻿Identifier = "RMBALocalization"
+Name = "Rift MultiBoxing Addon Localization"
+NameShort = "RMBAL"
+Description = "Localization files for Rift MultiBoxing Addon"
+Author = "Molikar@Faeblight"
+Email = "skennedysocal@gmail.com"
+Version = "0.0.0.1"
+Environment = "2.1"
+
+RunOnStartup = {
+	"strings_en.lua",
+	"loader.lua",
+}
+
+Dependencies = {
+	RiftMultiBoxingAddon = { "required", "after" },
+}

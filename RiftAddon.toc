@@ -1,0 +1,30 @@
+﻿Identifier = "RiftMultiBoxingAddon"
+Name = "Rift MultiBoxing Addon"
+NameShort = "RMBA"
+Description = "An addon to help with multiboxing in rift"
+Author = "Molikar@Hailol"
+Email = "skennedysocal@gmail.com"
+Version = "0.0.0.1"
+Environment = "3.4"
+
+RunOnStartup = {
+	"Utils.lua",
+	"Member.lua",
+	"Team.lua",
+	"Communication.lua",
+	"UserInterface.lua",
+	"RiftMultiBoxing.lua",
+}
+
+SavedVariables = {
+	RMBASettings = "character",
+}
+
+Embed = {
+      Localization = true,
+}
+
+Dependencies = {
+	Localization = { "optional", "before" },
+	MessageViewer = { "optional", "before" },
+}
