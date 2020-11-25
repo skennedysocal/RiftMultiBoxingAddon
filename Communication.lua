@@ -140,7 +140,7 @@ function RMBA.Comm.MemberUpdate( event, member )
 	RMBA.Utils:PrintDebug( "RMBA.Comm.MemberUpdate()")
 
 	local data = member:GetDataFromMember()
-	dump( data )
+	--dump( data )
 	Command.Message.Broadcast( RMBASettings.broadcastChannel or "party", nil, RMBA.Comm.messageID["Member"], data )
 end
 

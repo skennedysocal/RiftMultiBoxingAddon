@@ -15,7 +15,7 @@ function RMBA.Utils:PrintError( str, channel )
 end
 
 function RMBA.Utils:PrintDebug( str, channel )
-   --if false == RMBASettings.debug then return end
+   if false == RMBASettings.debug then return end
    
    local lStr = str or ""
    local lChannel = channel
@@ -137,6 +137,11 @@ function RMBA.Utils:GetDistance( name )
 end
 
 function RMBA.Utils:ComputeDistance( x1, y1, z1, x2, y2, z2 )
+	if nil == x1 then return 0 end
+	if nil == x2 then return 0 end
+	if nil == y2 then return 0 end
+	if nil == z2 then return 0 end
+	
 	return math.sqrt( (math.pow(x2 - x1, 2)) + (math.pow(y2 - y1, 2)) + (math.pow(z2 - z1, 2)) )
 end
 

@@ -4,7 +4,7 @@ NameShort = "RMBA"
 Description = "An addon to help with multiboxing in rift"
 Author = "Molikar@Hailol"
 Email = "skennedysocal@gmail.com"
-Version = "0.0.0.1"
+Version = "0.0.0.2"
 Environment = "3.4"
 
 RunOnStartup = {

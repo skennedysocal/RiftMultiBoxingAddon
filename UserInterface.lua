@@ -112,6 +112,22 @@ function Window:SetTitle( title )
 	self.frames.headerLabel:SetText( tostring(title) )
 end
 
+function Window:GetLeft()
+	return self.frames.base:GetLeft()
+end
+
+function Window:GetTop()
+	return self.frames.base:GetTop()
+end
+
+function Window:GetHeight()
+	return self.frames.base:GetHeight()
+end
+
+function Window:GetWidth()
+	return self.frames.base:GetWidth()
+end
+
 function Window:SetWidth( width )
 	self.frames.base:SetWidth( width )
 	self:update()

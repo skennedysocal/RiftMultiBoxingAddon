@@ -1,6 +1,6 @@
 -- Rift MultiBoxing AddOn Localizer
--- Written By Molikar@Faeblight
--- Copyright 2013
+-- Written By Molikar@Hailol
+-- Copyright 2020
 
 local Addon, RMBA = ...
 RMBAL = {}

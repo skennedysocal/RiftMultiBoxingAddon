@@ -180,7 +180,7 @@ end
 function RMBA.Team:Sort()
 	local newlist = {}
 
-	dump( RMBATeam.members )
+	--dump( RMBATeam.members )
 	for k, v in RMBA.Utils:spairs(RMBATeam.members, function(t, a, b) return t[a].name < t[b].name end) do
 		table.insert(newlist, v)
 	end
@@ -276,7 +276,7 @@ end
 function RMBA.Team.Refresh()
 	local ctx = Inspect.Time.Real()
 
-	if ctx - RMBATeam.lastupdate > 5 then
+	if ctx - RMBATeam.lastupdate > 1 then
 		RMBA.Utils:PrintDebug( "RMBA.Team:Refresh()" )
 		--dump( Inspect.Unit.Detail( "group01" ) )
 		RMBATeam.lastupdate = ctx

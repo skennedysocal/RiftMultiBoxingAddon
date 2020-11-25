@@ -1,6 +1,6 @@
 -- Rift MultiBoxing Addon
--- Written By Molikar@Faeblight
--- Copyright 2013
+-- Written By Molikar@Hailol
+-- Copyright 2020
 
 RMBAStrings_en = {
    text_windowTitle = "<font color='#6699CC'>Rift MultiBoxing Addon</font>",
